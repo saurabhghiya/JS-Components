@@ -1,0 +1,1 @@
+Optimizing search suggestion network calls using debounce in JS

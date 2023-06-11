@@ -1,0 +1,41 @@
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+}
+
+.container{
+    margin: 8vh auto 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+}
+
+h1{
+    width: fit-content;
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    color: rgb(100,100,100);
+}
+
+input{
+    min-width: 300px;
+    width: 500px;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: none;
+    outline: solid 2px rgba(200,200,200,0.7);
+    border-radius: 10px;
+}
+
+input:focus {
+    outline: solid 2px rgb(100,100,100);
+    
+}
