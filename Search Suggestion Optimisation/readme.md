@@ -1,4 +1,4 @@
-#Search Component
+# Search Component
 
 Optimizing search suggestion network calls using debounce in JS
 Search API used => 'https://demo.dataverse.org/api/search?q='
