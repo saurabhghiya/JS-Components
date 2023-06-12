@@ -1,5 +1,4 @@
 
-
 *{
     box-sizing: border-box;
     margin: 0;
@@ -7,35 +6,61 @@
 }
 
 body{
-    height: 100vh;
+    /* height: 100vh; */
+    margin-bottom: 80px;
 }
 
 .container{
+    width: 100%;
+    max-width: 1000px;
+    min-width: 240px;
     margin: 8vh auto 0px auto;
+    padding: 0px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: fit-content;
 }
 
 h1{
     width: fit-content;
     font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     font-size: 60px;
     color: rgb(100,100,100);
 }
 
-input{
-    min-width: 300px;
-    width: 500px;
+.searchbar{
+    width: 100%;
     padding: 5px 10px;
+
+    font-family: 'Roboto', sans-serif;
+    color: rgba(0, 0, 0);
     font-size: 20px;
+
     border: none;
     outline: solid 2px rgba(200,200,200,0.7);
     border-radius: 10px;
 }
 
-input:focus {
+.searchbar:focus {
     outline: solid 2px rgb(100,100,100);
-    
+}
+
+.results{
+    margin-top: 10px;
+    display: none;
+}
+
+.item{
+    margin-block-end: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+    transition: color ease 0.2s;
+    overflow: hidden;
+}
+
+.item:hover{
+    font-family: 'Roboto', sans-serif;
+    color: rgba(0, 0, 0, 1);
+    cursor: pointer;
 }
