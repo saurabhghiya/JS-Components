@@ -1,0 +1,121 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans';
+    font-weight: 500;
+}
+
+.container{
+    padding: 1rem 4rem;
+}
+
+.comment-container{
+    position: relative;
+    border-top: 2px solid #eee;
+    padding-top: 10px;
+    padding-left: 50px;
+    min-width: 400px;
+}
+
+.dp{
+    content: "";
+    height: 40px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-color: rgb(220,220,220);
+    position: absolute;
+    left: 0px;
+}
+
+.comment-card{
+    margin-bottom: 15px;
+}
+
+h3{
+    word-wrap: break-word;
+    text-align: justify;
+    font-family: 'Open Sans';
+    font-weight: 500;
+    font-size: 18px;
+
+    margin-bottom: 10px;
+}
+
+.time{
+    font-size: 12px;
+    color: #777;
+    margin-right: 10px;
+}
+
+i{
+    color:#777;
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.like{
+    color: #b21f1f;
+}
+
+.reply{
+    padding: 3px 10px;
+    color: #333;
+    font-weight: 600;
+    font-size: 12px;
+    width: fit-content;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+.reply:hover{
+    cursor: pointer;
+    color: #eee;
+    background-color: #333;
+}
+
+.comment-reply-container{
+    margin-top: 10px;
+    width: fit-content;
+}
+
+textarea{
+    resize: vertical;
+    outline: none;
+    /* height: max-content; */
+    min-height: 40px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    width: 400px;
+    display: block;
+}
+
+.btn-submit{
+    margin-top: 5px;
+    padding: 5px 10px;
+    color: #333;
+    font-weight: 600;
+    font-size: 12px;
+    background-color: #eee;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-submit:hover{
+    color: #eee;
+    background-color: #333;
+}
+
+/* if comment-container is not the first child of it's parent have space from left  */
+/* .comment-container:not(:first-child){
+    margin-left: 1rem;
+} */
